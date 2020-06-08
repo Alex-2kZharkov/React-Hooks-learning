@@ -1,15 +1,11 @@
 import React from 'react';
 import './App.css';
-import DataFetching from './DataFetching';
-import UseContexB from './UseContexB';
+import UseReducerCounter from './UseReducerCounter';
 
-export const Name = React.createContext('');  // creating context
 function App() {
   return (
     <div className='App'>
-      <Name.Provider value={'Erkeaim'}> {/* define value for context */}
-        <UseContexB />
-      </Name.Provider>
+      <UseReducerCounter />
     </div>
   );
 }
